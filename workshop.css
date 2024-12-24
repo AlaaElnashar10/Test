@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-position: center;
+    font-family: 'Lobster', cursive;
+}
+
+body {
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url('../Workshop/assets/picture-vegetables-fruits-white-table_985894-12.jpg.avif');
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #00b894;
+}
+
+
+.hero {
+    padding: 64px 5%;
+    text-align: center;
+    color: black;
+    margin-top: 80px;
+}
+
+.hero p {
+    font-size: 30px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: #43b09a;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 16px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.about {
+    padding: 64px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+    background-color: #f5f6fa;
+}
+
+.about div {
+    position: relative;
+    animation: mymove 1.5s ease-out;
+}
+
+@keyframes mymove {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.about h4 {
+    color: #5d5656;
+}
+
+.about img {
+    max-width: 100%;
+    border-radius: 10px;
+    position: relative;
+    animation: mymove2 1.5s ease-out;
+}
+
+@keyframes mymove2 {
+    from {
+        transform: translateX(200%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.food-types {
+    padding: 64px 5%;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.food-types h2 {
+    margin-bottom: 32px;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.food-grid img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu {
+    padding: 64px 5%;
+    background-color: antiquewhite;
+}
+
+.menu h2 {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 32px 64px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+    align-items: center;
+}
+
+.menu-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu-item .price {
+    color: #00b894;
+    margin-top: 8px;
+}
+
+.testimonials {
+    padding: 64px 5%;
+    background-color: #f5f6fa;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 32px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+.testimonial {
+    padding: 32px;
+    background: white;
+    border-radius: 10px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.stars {
+    color: #ffd700;
+    margin: 8px 0;
+}
+
+.contact {
+    padding: 64px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.contact img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
